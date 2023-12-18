@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="loco.css">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
     rel="stylesheet"
@@ -11,22 +12,33 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div id="minCircle"></div>
     <main>
           <section id="home">
-            <nav>
+            <nav id="nav">
 <a href="">Cynthia Ugwu</a>
 <h4>MENU+</h4>
             </nav>
             <div id="heading">
-                <h1>PRODUCT</h1>
+                <div class="bounding">
+                    <h1 class="boundingelem">PRODUCT</h1>
+                </div>
                <div id="textblock">
-                <h1 id="secondh1">DESIGNER</h1>
-                <h5>BASED IN TORONTO</h5>
+                 <div class="bounding">
+                     <h1 id="secondh1" class="boundingelem">DESIGNER</h1>
+                 </div>
+                 <div class="bounding">
+                    <h5 class="boundingelem">BASED IN TORONTO</h5>
+                 </div>
                 </div>
             </div>
             <div id="sideHeading">
-                <h5>available for freelance</h5>
-                <h5>work from may 23</h5>
+                <div class="bounding">
+                    <h5 class="boundingelem">available for freelance</h5>
+                </div>
+                <div class="bounding">
+                    <h5 class="boundingelem">work from may 23</h5>
+                </div>
             </div>
             <div id="homefooter">
                 <a href="#">previously worked at yml<i class="ri-arrow-right-up-line"></i></a>
@@ -79,5 +91,8 @@
     </div>
  </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

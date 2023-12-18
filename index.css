@@ -10,8 +10,25 @@ html , body{
     height: 100%;
     width: 100%;
 }
+#minCircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 1;
+background-color: white;
+border-radius: 50%;
+}
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
 #main{
     width: 100%;
+    background-color: black;
     /* height: auto; */ 
     /* we will give the height it is a good option as we don't know the exact height of the website  */
 }
@@ -20,6 +37,7 @@ html , body{
     color: white;
     height: 100vh;
     width: 100%;
+    position: relative;
     /* text-transform: uppercase; */
 
 }
@@ -53,11 +71,17 @@ nav a{
 }
 #textblock{
     width: fit-content;
+    flex-direction: column;
+    align-items: end;
+    display: flex;
 }
 #textblock h5{
-    text-align: right;
+    text-align: right !important;
 }
 #sideHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     margin-top: 10vw;
     padding-right: 30px;
     text-transform: uppercase;
